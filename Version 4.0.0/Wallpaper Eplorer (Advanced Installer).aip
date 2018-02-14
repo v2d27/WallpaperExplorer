@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="14.3" version="14.3" Modules="professional" RootPath="." Language="en" Id="{B16304C3-CB8C-4260-9B85-8BA402FF80E1}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;MsiJavaComponent;MsiDriverPackagesComponent;UserAccountsComponent;ScheduledTasksComponent;SqlConnectionComponent;AutorunComponent;FirewallExceptionComponent;GameUxComponent;MsiDirectEditorComponent;SharePointSlnComponent;SilverlightSlnComponent;MultipleInstancesComponent;SccmComponent;ActSyncAppComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_EXTERNALUIUNINSTALLERNAME" MultiBuildValue="DefaultBuild:aiui"/>
+    <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="AI_PRODUCTNAME_ARP" Value="[|ProductName]"/>
+    <ROW Property="AI_ThemeStyle" Value="default" MultiBuildValue="DefaultBuild:style9" MsiKey="AI_ThemeStyle"/>
+    <ROW Property="AI_UNINSTALLER" Value="msiexec.exe"/>
+    <ROW Property="ALLUSERS" Value="1" MultiBuildValue="DefaultBuild:3"/>
+    <ROW Property="ARPCOMMENTS" Value="[|ProductName] Installer" ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="LOGO.exe" Type="8"/>
+    <ROW Property="ARPSYSTEMCOMPONENT" Value="1"/>
+    <ROW Property="AiFeatIcoMainFeature" Value="LOGO.exe" Type="8"/>
+    <ROW Property="CTRLS" Value="2"/>
+    <ROW Property="MSIFASTINSTALL" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="Manufacturer" Value="Hercules"/>
+    <ROW Property="ProductCode" Value="1033:{0998A468-D14D-41C7-883E-DEF35B6B41BF} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Wallpaper Explorer"/>
+    <ROW Property="ProductVersion" Value="4.0" Type="32"/>
+    <ROW Property="REBOOT" MultiBuildValue="DefaultBuild:ReallySuppress"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="UpgradeCode" Value="{814A6EC2-13BE-4BAC-A088-0F54C9F42E0A}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="ProgramFilesFolder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~1|ProgramFilesFolder" IsPseudoRoot="1"/>
+    <ROW Directory="ProgramMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~2|ProgramMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Resources_Dir" Directory_Parent="Version4.0.0_Dir" DefaultDir="RESOUR~1|Resources"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="Version4.0.0_Dir" Directory_Parent="ProgramFilesFolder" DefaultDir="WALLPA~1|WallpaperExplorer"/>
+    <ROW Directory="WallpaperExplorer_Dir" Directory_Parent="ProgramMenuFolder" DefaultDir="WALLPA~1|Wallpaper Explorer"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_CustomARPName" ComponentId="{B7E41BB2-7B54-4475-B3C8-B776CF405951}" Directory_="APPDIR" Attributes="4" KeyPath="DisplayName" Options="1"/>
+    <ROW Component="AI_ExePath" ComponentId="{F644E96D-D54F-4CF6-9A5B-3557C8290258}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="About.exe" ComponentId="{8E0B0496-3B93-4885-A0EC-E837919474E3}" Directory_="Version4.0.0_Dir" Attributes="0" KeyPath="About.exe"/>
+    <ROW Component="HELP_USER.PNG" ComponentId="{54B986C7-E7C0-4028-A02F-B2D6FF3D9AED}" Directory_="Resources_Dir" Attributes="0" KeyPath="HELP_USER.PNG" Type="0"/>
+    <ROW Component="LicenseUserAgreement.rtf" ComponentId="{1789820D-9D50-418E-9C18-56ED74F71027}" Directory_="Version4.0.0_Dir" Attributes="0" KeyPath="LicenseUserAgreement.rtf" Type="0"/>
+    <ROW Component="ProductInformation" ComponentId="{43C5C998-1A23-45A7-A94A-67A9FF23CA8C}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="WEUpdater.exe" ComponentId="{15474FD4-EA9F-43B5-8774-16BFB640F0B5}" Directory_="Version4.0.0_Dir" Attributes="0" KeyPath="WEUpdater.exe"/>
+    <ROW Component="WallPaperExplorer.exe" ComponentId="{C2EAD47C-7B7D-4EB5-A6FA-C6661BC44F6A}" Directory_="Version4.0.0_Dir" Attributes="0" KeyPath="WallPaperExplorer.exe"/>
+    <ROW Component="WallpaperExplorer" ComponentId="{CAC2C52B-EDDC-46AB-874E-627D1CF2883B}" Directory_="WallpaperExplorer_Dir" Attributes="0"/>
+    <ROW Component="WallpaperExplorerFrame.exe" ComponentId="{C08C5FC8-2C6C-4B48-969E-96DA27F653D2}" Directory_="Version4.0.0_Dir" Attributes="0" KeyPath="WallpaperExplorerFrame.exe"/>
+    <ROW Component="config.exe" ComponentId="{1EE30276-91AC-486F-92AA-2B3B5C13296B}" Directory_="Version4.0.0_Dir" Attributes="0" KeyPath="config.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="AI_CustomARPName AI_ExePath About.exe HELP_USER.PNG LicenseUserAgreement.rtf ProductInformation WEUpdater.exe WallPaperExplorer.exe WallpaperExplorer WallpaperExplorerFrame.exe config.exe"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="About.exe" Component_="About.exe" FileName="About.exe" Attributes="0" SourcePath="About.exe" SelfReg="false" NextFile="config.exe" DigSign="true"/>
+    <ROW File="HELP_USER.PNG" Component_="HELP_USER.PNG" FileName="HELP_U~1.PNG|HELP_USER.PNG" Attributes="0" SourcePath="Resources\HELP_USER.PNG" SelfReg="false" NextFile="ICON_001.ICO"/>
+    <ROW File="ICON_001.ICO" Component_="HELP_USER.PNG" FileName="ICON_001.ICO" Attributes="0" SourcePath="Resources\ICON_001.ICO" SelfReg="false" NextFile="ICON_COPY.ICO"/>
+    <ROW File="ICON_COPY.ICO" Component_="HELP_USER.PNG" FileName="ICON_C~1.ICO|ICON_COPY.ICO" Attributes="0" SourcePath="Resources\ICON_COPY.ICO" SelfReg="false" NextFile="ICON_DELETE.ICO"/>
+    <ROW File="ICON_DELETE.ICO" Component_="HELP_USER.PNG" FileName="ICON_D~1.ICO|ICON_DELETE.ICO" Attributes="0" SourcePath="Resources\ICON_DELETE.ICO" SelfReg="false" NextFile="ICON_DETAILS.ICO"/>
+    <ROW File="ICON_DETAILS.ICO" Component_="HELP_USER.PNG" FileName="ICON_D~2.ICO|ICON_DETAILS.ICO" Attributes="0" SourcePath="Resources\ICON_DETAILS.ICO" SelfReg="false" NextFile="ICON_FOLDER.ico"/>
+    <ROW File="ICON_FOLDER.ico" Component_="HELP_USER.PNG" FileName="ICON_F~1.ICO|ICON_FOLDER.ico" Attributes="0" SourcePath="Resources\ICON_FOLDER.ico" SelfReg="false" NextFile="ICON_INFO.ICO"/>
+    <ROW File="ICON_INFO.ICO" Component_="HELP_USER.PNG" FileName="ICON_I~1.ICO|ICON_INFO.ICO" Attributes="0" SourcePath="Resources\ICON_INFO.ICO" SelfReg="false" NextFile="ICON_PICTURE.ICO"/>
+    <ROW File="ICON_PICTURE.ICO" Component_="HELP_USER.PNG" FileName="ICON_P~1.ICO|ICON_PICTURE.ICO" Attributes="0" SourcePath="Resources\ICON_PICTURE.ICO" SelfReg="false" NextFile="ICON_PROP.ICO"/>
+    <ROW File="ICON_PROP.ICO" Component_="HELP_USER.PNG" FileName="ICON_P~2.ICO|ICON_PROP.ICO" Attributes="0" SourcePath="Resources\ICON_PROP.ICO" SelfReg="false" NextFile="ICON_SHARE.ICO"/>
+    <ROW File="ICON_SHARE.ICO" Component_="HELP_USER.PNG" FileName="ICON_S~1.ICO|ICON_SHARE.ICO" Attributes="0" SourcePath="Resources\ICON_SHARE.ICO" SelfReg="false" NextFile="Loading.gif"/>
+    <ROW File="LOGO.ICO" Component_="HELP_USER.PNG" FileName="LOGO.ICO" Attributes="0" SourcePath="Resources\LOGO.ICO" SelfReg="false" NextFile="LOGO.PNG"/>
+    <ROW File="LOGO.PNG" Component_="HELP_USER.PNG" FileName="LOGO.PNG" Attributes="0" SourcePath="Resources\LOGO.PNG" SelfReg="false" NextFile="MENU.PNG"/>
+    <ROW File="LicenseUserAgreement.rtf" Component_="LicenseUserAgreement.rtf" FileName="LICENS~1.RTF|License User Agreement.rtf" Attributes="0" SourcePath="License User Agreement.rtf" SelfReg="false" NextFile="HELP_USER.PNG"/>
+    <ROW File="Loading.gif" Component_="HELP_USER.PNG" FileName="Loading.gif" Attributes="0" SourcePath="Resources\Loading.gif" SelfReg="false" NextFile="LOGO.ICO"/>
+    <ROW File="MENU.PNG" Component_="HELP_USER.PNG" FileName="MENU.PNG" Attributes="0" SourcePath="Resources\MENU.PNG" SelfReg="false" NextFile="WallpaperEplorerAdvancedInstaller.aip"/>
+    <ROW File="WEUpdater.exe" Component_="WEUpdater.exe" FileName="WEUPDA~1.EXE|WE Updater.exe" Attributes="0" SourcePath="WE Updater.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="WallPaperExplorer.exe" Component_="WallPaperExplorer.exe" FileName="WALLPA~1.EXE|WallPaperExplorer.exe" Attributes="0" SourcePath="WallPaperExplorer.exe" SelfReg="false" NextFile="WallpaperExplorerFrame.exe" DigSign="true"/>
+    <ROW File="WallpaperEplorerAdvancedInstaller.aip" Component_="LicenseUserAgreement.rtf" FileName="WALLPA~1.AIP|Wallpaper Eplorer (Advanced Installer).aip" Attributes="0" SourcePath="Wallpaper Eplorer (Advanced Installer).aip" SelfReg="false" NextFile="WallPaperExplorer.exe"/>
+    <ROW File="WallpaperExplorerFrame.exe" Component_="WallpaperExplorerFrame.exe" FileName="WALLPA~2.EXE|WallpaperExplorerFrame.exe" Attributes="0" SourcePath="WallpaperExplorerFrame.exe" SelfReg="false" NextFile="WEUpdater.exe" DigSign="true"/>
+    <ROW File="config.exe" Component_="config.exe" FileName="config.exe" Attributes="0" SourcePath="config.exe" SelfReg="false" NextFile="LicenseUserAgreement.rtf" DigSign="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.custcomp.MsiShortcutPropertyComponent">
+    <ROW MsiShortcutProperty="WallPaperExplorerv4.0_10" Shortcut_="WallPaperExplorerv4.0_1" PropertyKey="System.AppUserModel.PreventPinning" PropVariantValue="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="Installer" Languages="en" InstallationType="4" CabsLocation="1" PackageType="1" FilesInsideExe="true" ExeIconPath="Resources\LOGO.ICO" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true" ExeName="WallpaperExplorerInstaller" UACExecutionLevel="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DigCertStoreComponent">
+    <ROW TimeStampUrl="http://timestamp.digicert.com" SignerDescription="[|ProductName]" SignOptions="0" SignTool="0" UseSha256="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractFiles" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="ExternalUICleaner.dll" SourcePath="&lt;AI_CUSTACTS&gt;ExternalUICleaner.dll"/>
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="WallpaperExplorer_Dir" Component_="WallpaperExplorer" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DATA_SETTER" Type="51" Source="AI_ExtractFiles" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DoRemoveExternalUIStub" Type="3585" Source="ExternalUICleaner.dll" Target="DoRemoveExternalUIStub" WithoutSeq="true"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_EstimateExtractFiles" Type="1" Source="Prereq.dll" Target="EstimateExtractFiles"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractFiles" Type="1025" Source="Prereq.dll" Target="ExtractSourceFiles" AdditionalSeq="AI_DATA_SETTER"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_GetArpIconPath" Type="1" Source="aicustact.dll" Target="GetArpIconPath"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="[#WallPaperExplorer.exe]"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_RemoveExternalUIStub" Type="1" Source="ExternalUICleaner.dll" Target="RemoveExternalUIStub"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFilesFolder]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="LOGO.exe" SourcePath="Resources\LOGO.ICO" Index="0"/>
+    <ROW Name="SystemFoldermsiexec.exe" SourcePath="&lt;AI_RES&gt;uninstall.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIniFileComponent">
+    <ROW IniFile="DISPLAY" FileName="WALLPA~1.INI|Wallpaper Explorer.ini" DirProperty="Version4.0.0_Dir" Section="INFO" Key="DISPLAY" Value="False" Action="0" Component_="About.exe"/>
+    <ROW IniFile="Icon" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE" Key="&quot;Icon&quot;" Value="hex(2):25,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="Icon_10" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z007ADH" Key="&quot;Icon&quot;" Value="hex(2):25,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="Icon_6" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z003ADB" Key="&quot;Icon&quot;" Value="hex(2):25,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="Icon_7" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z004ADD" Key="&quot;Icon&quot;" Value="hex(2):25,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="Icon_8" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z005ADE" Key="&quot;Icon&quot;" Value="hex(2):25,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="Icon_9" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z006ADG" Key="&quot;Icon&quot;" Value="hex(2):25,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="MUIVerb" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE" Key="&quot;MUIVerb&quot;" Value="&quot;Turn Off Options&quot;" Action="0" Component_="About.exe"/>
+    <ROW IniFile="MUIVerb_10" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z007ADH" Key="&quot;MUIVerb&quot;" Value="&quot;Shut Down&quot;" Action="0" Component_="About.exe"/>
+    <ROW IniFile="MUIVerb_6" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z003ADB" Key="&quot;MUIVerb&quot;" Value="&quot;Lock User&quot;" Action="0" Component_="About.exe"/>
+    <ROW IniFile="MUIVerb_7" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z004ADD" Key="&quot;MUIVerb&quot;" Value="&quot;Log Off&quot;" Action="0" Component_="About.exe"/>
+    <ROW IniFile="MUIVerb_8" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z005ADE" Key="&quot;MUIVerb&quot;" Value="&quot;Sleep&quot;" Action="0" Component_="About.exe"/>
+    <ROW IniFile="MUIVerb_9" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z006ADG" Key="&quot;MUIVerb&quot;" Value="&quot;Restart&quot;" Action="0" Component_="About.exe"/>
+    <ROW IniFile="SubCommands" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE" Key="&quot;SubCommands&quot;" Value="&quot;&quot;" Action="0" Component_="About.exe"/>
+    <ROW IniFile="_" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z003ADB\command" Key="@" Value="hex(2):22,00,25,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="__5" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z004ADD\command" Key="@" Value="hex(2):22,00,25,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="__6" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z005ADE\command" Key="@" Value="hex(2):22,00,25,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="__7" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z006ADG\command" Key="@" Value="hex(2):22,00,25,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="__8" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z007ADH\command" Key="@" Value="hex(2):22,00,25,00,50,00,72,00,6f,00,67,00,72,00,61,00,6d,00,46,00,69,00,6c,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="c004500610073007900200043006f006e00" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE" Key="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Value="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="c004500610073007900200043006f006e00_11" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z003ADB" Key="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Value="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="c004500610073007900200043006f006e00_12" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z003ADB\command" Key="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Value="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="c004500610073007900200043006f006e00_13" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z004ADD" Key="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Value="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="c004500610073007900200043006f006e00_14" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z004ADD\command" Key="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Value="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="c004500610073007900200043006f006e00_15" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z005ADE" Key="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Value="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="c004500610073007900200043006f006e00_16" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z005ADE\command" Key="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Value="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="c004500610073007900200043006f006e00_17" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z006ADG" Key="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Value="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="c004500610073007900200043006f006e00_18" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z006ADG\command" Key="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Value="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="c004500610073007900200043006f006e00_19" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z007ADH" Key="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Value="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="c004500610073007900200043006f006e00_20" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z007ADH\command" Key="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Value="00,65,00,73,00,25,00,5c,00,45,00,61,00,73,00,79,00,20,00,43,00,6f,00,6e,00,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="d0065006e0075005c00450063004d" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE" Key="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Value="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="d0065006e0075005c00450063004d_11" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z003ADB" Key="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Value="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="d0065006e0075005c00450063004d_12" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z003ADB\command" Key="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Value="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="d0065006e0075005c00450063004d_13" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z004ADD" Key="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Value="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="d0065006e0075005c00450063004d_14" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z004ADD\command" Key="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Value="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="d0065006e0075005c00450063004d_15" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z005ADE" Key="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Value="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="d0065006e0075005c00450063004d_16" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z005ADE\command" Key="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Value="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="d0065006e0075005c00450063004d_17" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z006ADG" Key="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Value="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="d0065006e0075005c00450063004d_18" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z006ADG\command" Key="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Value="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="d0065006e0075005c00450063004d_19" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z007ADH" Key="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Value="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="d0065006e0075005c00450063004d_20" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z007ADH\command" Key="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Value="74,00,65,00,78,00,74,00,20,00,4d,00,65,00,6e,00,75,00,5c,00,45,00,63,00,4d,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="e0075002e00650078006500220020002f0053006800" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z003ADB\command" Key="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,22,00,20,00,2f,00,53,00,68,00,\" Value="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,22,00,20,00,2f,00,53,00,68,00,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="e0075002e00650078006500220020002f0053006800_5" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z004ADD\command" Key="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,22,00,20,00,2f,00,53,00,68,00,\" Value="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,22,00,20,00,2f,00,53,00,68,00,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="e0075002e00650078006500220020002f0053006800_6" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z005ADE\command" Key="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,22,00,20,00,2f,00,53,00,68,00,\" Value="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,22,00,20,00,2f,00,53,00,68,00,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="e0075002e00650078006500220020002f0053006800_7" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z006ADG\command" Key="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,22,00,20,00,2f,00,53,00,68,00,\" Value="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,22,00,20,00,2f,00,53,00,68,00,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="e0075002e00650078006500220020002f0053006800_8" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z007ADH\command" Key="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,22,00,20,00,2f,00,53,00,68,00,\" Value="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,22,00,20,00,2f,00,53,00,68,00,\" Action="0" Component_="About.exe"/>
+    <ROW IniFile="e0075002e006500780065002c00310034000000" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE" Key="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,2c,00,31,00,34,00,00,00" Value="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,2c,00,31,00,34,00,00,00" Action="0" Component_="About.exe"/>
+    <ROW IniFile="e0075002e006500780065002c00310034000000_2" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z007ADH" Key="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,2c,00,31,00,34,00,00,00" Value="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,2c,00,31,00,34,00,00,00" Action="0" Component_="About.exe"/>
+    <ROW IniFile="e0075002e006500780065002c00310035000000" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z003ADB" Key="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,2c,00,31,00,35,00,00,00" Value="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,2c,00,31,00,35,00,00,00" Action="0" Component_="About.exe"/>
+    <ROW IniFile="e0075002e006500780065002c00310037000000" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z004ADD" Key="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,2c,00,31,00,37,00,00,00" Value="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,2c,00,31,00,37,00,00,00" Action="0" Component_="About.exe"/>
+    <ROW IniFile="e0075002e006500780065002c00310038000000" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z005ADE" Key="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,2c,00,31,00,38,00,00,00" Value="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,2c,00,31,00,38,00,00,00" Action="0" Component_="About.exe"/>
+    <ROW IniFile="e0075002e006500780065002c00320030000000" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z006ADG" Key="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,2c,00,32,00,30,00,00,00" Value="00,65,00,6e,00,75,00,2e,00,65,00,78,00,65,00,2c,00,32,00,30,00,00,00" Action="0" Component_="About.exe"/>
+    <ROW IniFile="f0077006e0020002f004c000000" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z004ADD\command" Key="75,00,74,00,64,00,6f,00,77,00,6e,00,20,00,2f,00,4c,00,00,00" Value="75,00,74,00,64,00,6f,00,77,00,6e,00,20,00,2f,00,4c,00,00,00" Action="0" Component_="About.exe"/>
+    <ROW IniFile="f0077006e0020002f0052000000" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z006ADG\command" Key="75,00,74,00,64,00,6f,00,77,00,6e,00,20,00,2f,00,52,00,00,00" Value="75,00,74,00,64,00,6f,00,77,00,6e,00,20,00,2f,00,52,00,00,00" Action="0" Component_="About.exe"/>
+    <ROW IniFile="f0077006e0020002f0053000000" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z007ADH\command" Key="75,00,74,00,64,00,6f,00,77,00,6e,00,20,00,2f,00,53,00,00,00" Value="75,00,74,00,64,00,6f,00,77,00,6e,00,20,00,2f,00,53,00,00,00" Action="0" Component_="About.exe"/>
+    <ROW IniFile="f0077006e0020002f0053004d000000" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z005ADE\command" Key="75,00,74,00,64,00,6f,00,77,00,6e,00,20,00,2f,00,53,00,4d,00,00,00" Value="75,00,74,00,64,00,6f,00,77,00,6e,00,20,00,2f,00,53,00,4d,00,00,00" Action="0" Component_="About.exe"/>
+    <ROW IniFile="f0077006e0020002f0055004c000000" FileName="RIGHTC~1.REG|right context.reg" DirProperty="Version4.0.0_Dir" Section="HKEY_CLASSES_ROOT\Directory\Background\shell\Z002AAE\shell\Z003ADB\command" Key="75,00,74,00,64,00,6f,00,77,00,6e,00,20,00,2f,00,55,00,4c,00,00,00" Value="75,00,74,00,64,00,6f,00,77,00,6e,00,20,00,2f,00,55,00,4c,00,00,00" Action="0" Component_="About.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1502"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99" Builds="DefaultBuild"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractFiles" Sequence="3998" Builds="DefaultBuild"/>
+    <ROW Action="AI_GetArpIconPath" Sequence="1401"/>
+    <ROW Action="AI_RemoveExternalUIStub" Condition="(REMOVE=&quot;ALL&quot;) AND ((VersionNT &gt; 500) OR((VersionNT = 500) AND (ServicePackLevel &gt;= 4)))" Sequence="1501"/>
+    <ROW Action="AI_DATA_SETTER" Sequence="3997"/>
+    <ROW Action="AI_EstimateExtractFiles" Sequence="3999" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT64 OR ((VersionNT &lt;&gt; 501) OR (ServicePackLevel = 3))) AND ((VersionNT &lt;&gt; 502) OR (ServicePackLevel = 2))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="SETUPEXEDIR OR (REMOVE=&quot;ALL&quot;)" Description="This package can only be run from a bootstrapper." DescriptionLocId="AI.LaunchCondition.RequireBootstrapper" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
+    <ROW Registry="Comments" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Comments" Value="[ARPCOMMENTS]" Component_="AI_CustomARPName"/>
+    <ROW Registry="Contact" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Contact" Value="[ARPCONTACT]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayIcon" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayIcon" Value="[ARP_ICON_PATH]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayName" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayName" Value="[AI_PRODUCTNAME_ARP]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayVersion" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayVersion" Value="[ProductVersion]" Component_="AI_CustomARPName"/>
+    <ROW Registry="EstimatedSize" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="EstimatedSize" Value="#[AI_ARP_SIZE]" Component_="AI_CustomARPName"/>
+    <ROW Registry="HelpLink" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="HelpLink" Value="[ARPHELPLINK]" Component_="AI_CustomARPName"/>
+    <ROW Registry="HelpTelephone" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="HelpTelephone" Value="[ARPHELPTELEPHONE]" Component_="AI_CustomARPName"/>
+    <ROW Registry="InstallLocation" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="InstallLocation" Value="[APPDIR]" Component_="AI_CustomARPName"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Publisher" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Publisher" Value="[Manufacturer]" Component_="AI_CustomARPName"/>
+    <ROW Registry="URLInfoAbout" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="URLInfoAbout" Value="[ARPURLINFOABOUT]" Component_="AI_CustomARPName"/>
+    <ROW Registry="URLUpdateInfo" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="URLUpdateInfo" Value="[ARPURLUPDATEINFO]" Component_="AI_CustomARPName"/>
+    <ROW Registry="UninstallPath" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="UninstallPath" Value="[AI_UNINSTALLER] /i [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
+    <ROW Registry="UninstallString" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="UninstallString" Value="[AI_UNINSTALLER] /i [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+    <ROW Registry="VersionMajor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMajor" Value="#4" Component_="AI_CustomARPName"/>
+    <ROW Registry="VersionMinor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMinor" Value="#0" Component_="AI_CustomARPName"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="UninstallWallpaperExplorer" Directory_="WallpaperExplorer_Dir" Name="UNINST~1|Uninstall WallpaperExplorer" Component_="AI_ExePath" Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]" Hotkey="0" Icon_="SystemFoldermsiexec.exe" IconIndex="0" ShowCmd="1"/>
+    <ROW Shortcut="WallPaperExplorerv4.0" Directory_="DesktopFolder" Name="WALLPA~1.0|WallPaper Explorer v4.0" Component_="WallPaperExplorer.exe" Target="[#WallPaperExplorer.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="Version4.0.0_Dir"/>
+    <ROW Shortcut="WallPaperExplorerv4.0_1" Directory_="WallpaperExplorer_Dir" Name="WALLPA~1.0|WallPaper Explorer v4.0" Component_="WallPaperExplorer.exe" Target="[#WallPaperExplorer.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="Version4.0.0_Dir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

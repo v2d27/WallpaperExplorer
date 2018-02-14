@@ -1,0 +1,3 @@
+[Info]
+version=3.7.3.0
+File=https://dl.dropboxusercontent.com/s/ukeq563gyvo86p9/WallpaperExplorerUpdate.exe?dl1
